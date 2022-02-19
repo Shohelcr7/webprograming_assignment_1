@@ -1,0 +1,134 @@
+body {
+  background-color: rgb(147, 241, 229);
+  font-family: Arial;
+  margin: 0;
+}
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  color: rgb(8, 27, 15);
+}
+
+.navbar {
+  display: flex;
+  background-color: rgb(52, 73, 94);
+}
+/* Style the navigation bar links */
+.navbar a {
+  color: rgb(191, 232, 235);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(118, 215, 196);
+  color: black;
+  font-weight: bold;
+}
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+.loremtext:hover {
+  background-color: rgb(177, 202, 172);
+  color: black;
+  font-weight: bold;
+}
+.loremHead {
+  color: rgb(8, 27, 15);
+  padding: 5px;
+  text-align: center;
+}
+.sep-row {
+  border: 1px solid rgb(155, 4, 185);
+  background-color: rgb(10, 3, 43);
+}
+
+.syntax {
+  text-align: start;
+}
+.listOfTags {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
+}
+.flip-card {
+  background-color: rgb(40, 23, 66);
+  width: 300px;
+  height: 320px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid rgb(52, 73, 94);
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(40, 23, 66);
+  color: rgb(225, 228, 228);
+  padding: 0px;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(212, 176, 245);
+  color: black;
+  transform: rotateY(180deg);
+}
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  padding: 10px;
+}
+
+/* Footer */
+.footer {
+  flex: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  background: rgb(52, 73, 94);
+  color: rgb(194, 247, 235);
+  font-weight: bold;
+}
