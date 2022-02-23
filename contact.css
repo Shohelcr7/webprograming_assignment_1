@@ -1,0 +1,61 @@
+body {
+  background-color: rgb(147, 241, 229);
+  font-family: montserrat;
+  margin: 0;
+}
+/* Header/logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  color: rgb(8, 27, 15);
+}
+
+.navbar {
+  display: flex;
+  background-color: rgb(52, 73, 94);
+}
+/* Style the navigation bar links */
+.navbar a {
+  color: rgb(191, 232, 235);
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: rgb(118, 215, 196);
+  color: black;
+  font-weight: bold;
+}
+.icons i {
+  padding: 10px;
+  font-size: 60px;
+  color: lightblue;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  padding: 10px;
+}
+/* Footer */
+.footer {
+  flex: 50%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  background: rgb(52, 73, 94);
+  color: rgb(194, 247, 235);
+  font-weight: bold;
+}
