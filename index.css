@@ -1,7 +1,6 @@
 body {
   background-color: rgb(147, 241, 229);
-  font-family: montserrat;
-  margin: 0;
+  font-family: cursive;
 }
 /* Header/logo Title */
 .header {
@@ -27,28 +26,50 @@ body {
 
 /* Change color on hover */
 .navbar a:hover {
-  background-color: rgb(118, 215, 196);
+  background-color: rgb(147, 241, 229);
   color: black;
   font-weight: bold;
 }
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+p.loremtext {
+  background-color: rgb(177, 202, 172);
+  color: black;
+  font-weight: bold;
+}
+.loremHead {
+  color: rgb(8, 27, 15);
+  padding: 5px;
+  text-align: center;
+}
+.sep-row {
+  border: 1px solid rgb(155, 4, 185);
+  background-color: rgb(10, 3, 43);
+}
 
-.main-grid {
-  background-image: url(images/stripe\ .png);
-  position: relative;
-  height: 600px;
+.syntax {
+  text-align: start;
+}
+.listOfTags {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  height: fit-content;
 }
 .flip-card {
   background-color: rgb(40, 23, 66);
-  width: 330px;
-  height: 420px;
+  width: 300px;
+  height: 320px;
+  margin: 10px;
   padding: 10px;
   border: 1px solid rgb(52, 73, 94);
-  position: absolute;
-  top: 15%;
-  left: 35%;
-  border-radius: 20px;
+  border-radius: 15px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -65,19 +86,6 @@ body {
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
-flip-card-front h2 {
-  margin-top: 20px;
-  padding-top: 10px;
-}
-flip-card-front h4 {
-  margin-top: 5px;
-  padding-top: 10px;
-}
-
-.flip-card-front p {
-  margin-top: 25px;
-  padding: 15px;
-}
 
 /* Position the front and back side */
 .flip-card-front,
@@ -87,6 +95,7 @@ flip-card-front h4 {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+  border-radius: 10px;
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -98,78 +107,29 @@ flip-card-front h4 {
 
 /* Style the back side */
 .flip-card-back {
+  background-color: rgb(212, 176, 245);
   color: black;
   transform: rotateY(180deg);
 }
-.flip-card-back img {
-  width: 300px;
-  height: 370px;
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+  padding: 10px;
 }
+
 /* Footer */
 .footer {
   flex: 50%;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 50px;
   padding: 20px;
   text-align: center;
   background: rgb(52, 73, 94);
   color: rgb(194, 247, 235);
   font-weight: bold;
-}
-
-/* for smaller Screen (mobile devices)  */
-
-@media (max-width: 600px) {
-  .flip-card {
-    background-color: rgb(40, 23, 66);
-    width: 270px;
-    height: 520px;
-    padding: 10px;
-    border: 1px solid rgb(52, 73, 94);
-    position: absolute;
-    top: 5%;
-    left: 15%;
-    border-radius: 20px;
-  }
-
-  .flip-card-back img {
-    width: 200px;
-    height: 250px;
-    padding-top: 80px;
-  }
-}
-
-/* for Medium Screen (Tablet devices)  */
-
-@media (min-width: 600px) {
-  .flip-card {
-    background-color: rgb(40, 23, 66);
-    width: 330px;
-    height: 420px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border: 1px solid rgb(52, 73, 94);
-    position: absolute;
-    top: 10%;
-    left: 18%;
-    border-radius: 20px;
-  }
-}
-
-/* for Large Screen (Smaller PC devices)  
-
- Large devices (laptops/desktops, 992px and up) */
-@media (min-width: 992px) {
-  .flip-card {
-    background-color: rgb(40, 23, 66);
-    width: 330px;
-    height: 420px;
-    padding: 10px;
-    border: 1px solid rgb(52, 73, 94);
-    position: absolute;
-    top: 15%;
-    left: 32%;
-    border-radius: 20px;
-  }
 }

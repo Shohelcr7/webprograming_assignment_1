@@ -38,13 +38,50 @@ body {
   text-shadow: 2px 2px 4px #000000;
 }
 
-.contactForm {
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  width: 768px;
+  align-items: center;
+  margin-left: 250px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.contactt_form {
   display: flex;
+  align-items: center;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
+  align-items: stretch;
+  margin-left: 60px;
+  margin-right: 90px;
   margin-top: 50px;
+  padding: 20px;
+}
+#title_form {
+  padding-bottom: 20px;
+  padding-left: 50px;
+}
+input,
+label,
+textarea {
   padding: 10px;
+}
+#sub_btn {
+  align-items: center;
+  margin-left: 150px;
+  width: 150px;
+  height: 30px;
+  border: 2px solid rgb(6, 34, 23);
+  color: rgb(16, 38, 51);
+  font-weight: bolder;
+  border-radius: 20px;
+  background-color: rgb(87, 196, 230);
 }
 /* Footer */
 .footer {
@@ -52,10 +89,175 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  height: 150px;
   margin-top: 50px;
   padding: 20px;
   text-align: center;
   background: rgb(52, 73, 94);
   color: rgb(194, 247, 235);
   font-weight: bold;
+}
+
+/* for smaller Screen (mobile devices)  */
+@media (max-width: 600px) {
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    width: 450px;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .contactt_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  #title_form {
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  input,
+  label,
+  textarea {
+    padding: 10px;
+  }
+  #sub_btn {
+    align-items: center;
+    margin-left: 100px;
+    width: 150px;
+    height: 30px;
+    border: 2px solid rgb(6, 34, 23);
+    color: rgb(16, 38, 51);
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: rgb(87, 196, 230);
+  }
+}
+
+/* for Medium Screen (Tablet devices)  */
+
+@media (min-width: 600px) {
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    width: 520px;
+    align-items: center;
+    margin-left: 100px;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .contactt_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-left: 20px;
+    margin-right: 60px;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  #title_form {
+    padding-bottom: 20px;
+    padding-left: 20px;
+  }
+  input,
+  label,
+  textarea {
+    padding: 10px;
+  }
+  #sub_btn {
+    align-items: center;
+    margin-left: 140px;
+    width: 150px;
+    height: 30px;
+    border: 2px solid rgb(6, 34, 23);
+    color: rgb(16, 38, 51);
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: rgb(87, 196, 230);
+  }
+}
+
+/* for Large Screen (Smaller PC devices)  
+
+ Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    width: 768px;
+    align-items: center;
+    margin-left: 200px;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .contactt_form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    padding: 20px;
+  }
+  #title_form {
+    padding-bottom: 20px;
+    padding-left: 50px;
+  }
+  input,
+  label,
+  textarea {
+    padding: 10px;
+  }
+  #sub_btn {
+    align-items: center;
+    margin-left: 150px;
+    width: 150px;
+    height: 30px;
+    border: 2px solid rgb(6, 34, 23);
+    color: rgb(16, 38, 51);
+    font-weight: bolder;
+    border-radius: 20px;
+    background-color: rgb(87, 196, 230);
+  }
+  /* Footer */
+  .footer {
+    flex: 50%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 150px;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    background: rgb(52, 73, 94);
+    color: rgb(194, 247, 235);
+    font-weight: bold;
+  }
 }
